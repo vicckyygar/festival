@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festival de Música 2025</title>
+    <link rel="stylesheet" href="festival.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a2e0b1f91c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-music"></i>
+            <h1>Festival de Música 2025</h1>
+        </div>
+        <nav>
+            <a href="#">Line-up</a>
+            <a href="#">Entradas</a>
+            <a href="#">Ubicación</a>
+            <a href="#">Galería</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>¡Viví la experiencia musical del año!</h2>
+        <p>3 días de música, arte y diversión en Córdoba.</p>
+        <a href="#" class="btn">Comprar Entradas</a>
+    </section>
+
+    <main>
+        <section class="lineup">
+    <h2><i class="fas fa-users"></i> Line-up</h2>
+    <div class="dias-lineup">
+        <div class="dia">
+            <h3>Viernes 21</h3>
+            <ul>
+                <li>🎤 Indie Dream</li>
+                <li>🎸 Los Acústicos</li>
+                <li>🎧 Neón Nocturno</li>
+                <li>🎷 Sol Álvarez</li>
+                <li>🎹 DJ Franja</li>
+            </ul>
+        </div>
+        <div class="dia">
+            <h3>Sábado 22</h3>
+            <ul>
+                <li>🥁 Electro Jungle</li>
+                <li>🎶 Funky Beat</li>
+                <li>🎻 Ana Violeta</li>
+                <li>🪕 Los del Valle</li>
+                <li>🎼 Marina Glow</li>
+            </ul>
+        </div>
+        <div class="dia">
+            <h3>Domingo 23</h3>
+            <ul>
+                <li>🎙️ Urban Soul</li>
+                <li>🕺 Beat City</li>
+                <li>🎸 Rolo & los Rolling</li>
+                <li>🎧 DJ Maquina</li>
+                <li>🎤 Clara Azul</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+      <header>
+        <h1><i class="fas fa-ticket-alt"></i> Entradas Festival 2025</h1>
+    </header>
+
+    <main>
+        <section class="selector-dias">
+            <h2>Elegí tu día</h2>
+            <div class="botones-dias">
+                <button onclick="mostrarDia('viernes')">Viernes 21</button>
+                <button onclick="mostrarDia('sabado')">Sábado 22</button>
+                <button onclick="mostrarDia('domingo')">Domingo 23</button>
+            </div>
+        </section>
+
+        <section id="viernes" class="entradas-dia activo">
+            <h3>Entradas - Viernes 21</h3>
+            <div class="tipos-entradas">
+                <div class="entrada-card">
+                    <h4>General</h4>
+                    <p class="precio">$4.000</p>
+                    <ul>
+                        <li>Zona general</li>
+                        <li>Acceso desde las 17:00</li>
+                    </ul>
+                    <a href="#" class="btn">Comprar</a>
+                </div>
+                <div class="entrada-card">
+                    <h4>VIP</h4>
+                    <p class="precio">$8.000</p>
+                    <ul>
+                        <li>Zona preferencial</li>
+                        <li>Bebida sin alcohol incluida</li>
+                    </ul>
+                    <a href="#" class="btn">Comprar</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="sabado" class="entradas-dia">
+            <h3>Entradas - Sábado 22</h3>
+            <div class="tipos-entradas">
+                <div class="entrada-card">
+                    <h4>General</h4>
+                    <p class="precio">$5.000</p>
+                    <ul>
+                        <li>Acceso a todo el predio</li>
+                        <li>Zona general</li>
+                    </ul>
+                    <a href="#" class="btn">Comprar</a>
+                </div>
+                <div class="entrada-card">
+                    <h4>VIP</h4>
+                    <p class="precio">$9.500</p>
+                    <ul>
+                        <li>Zona VIP + Lounge</li>
+                        <li>Merchandising</li>
+                    </ul>
+                    <a href="#" class="btn">Comprar</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="domingo" class="entradas-dia">
+            <h3>Entradas - Domingo 23</h3>
+            <div class="tipos-entradas">
+                <div class="entrada-card">
+                    <h4>General</h4>
+                    <p class="precio">$5.500</p>
+                    <ul>
+                        <li>Zona general</li>
+                        <li>Acceso a zona food trucks</li>
+                    </ul>
+                    <a href="#" class="btn">Comprar</a>
+                </div>
+                <div class="entrada-card">
+                    <h4>Full Experience</h4>
+                    <p class="precio">$12.000</p>
+                    <ul>
+                        <li>Meet & Greet</li>
+                        <li>Bebidas + regalos exclusivos</li>
+                    </ul>
+                    <a href="#" class="btn">Comprar</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        function mostrarDia(diaId) {
+            document.querySelectorAll('.entradas-dia').forEach(section => {
+                section.classList.remove('activo');
+            });
+            document.getElementById(diaId).classList.add('activo');
+        }
+    </script>
+
+        <section class="ubicacion">
+            <h2><i class="fas fa-map-marker-alt"></i> Ubicación</h2>
+            <p>Parque Central, Ciudad de Córdoba</p>
+            <iframe src="https://www.google.com/maps/embed?..." width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+        <section class="galeria">
+            <h2><i class="fas fa-camera"></i> Galería</h2>
+            <div class="imagenes">
+                <img src="../paginasrandom/imagenes/festival1.jpg" alt="Festival 1">
+                <img src="../paginasrandom/imagenes/festival2.jpg" alt="Festival 2">
+                <img src="../paginasrandom/imagenes/festival3.jpg" alt="Festival 3">
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <h2><i class="fas fa-envelope"></i> Suscribite</h2>
+            <p>Recibí novedades y descuentos exclusivos</p>
+            <form>
+                <input type="email" placeholder="Tu email" required>
+                <button type="submit">Suscribirme</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Festival Indie | Seguinos en 
+            <a href="#"><i class="fab fa-instagram"></i></a> 
+            <a href="#"><i class="fab fa-facebook"></i></a> 
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </p>
+    </footer>
+</body>
+</html>
+

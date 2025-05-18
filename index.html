@@ -1,199 +1,227 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Festival de Música 2025</title>
-    <link rel="stylesheet" href="festival.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a2e0b1f91c.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Festival Sonido Sur</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="festival.css" />
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <i class="fas fa-music"></i>
-            <h1>Festival de Música 2025</h1>
-        </div>
-        <nav>
-            <a href="#">Line-up</a>
-            <a href="#">Entradas</a>
-            <a href="#">Ubicación</a>
-            <a href="#">Galería</a>
-            <a href="#">Contacto</a>
-        </nav>
-    </header>
+  <header>
+    <div class="logo">Sonido Sur</div>
+    <nav>
+      <a href="#lineup">Lineup</a>
+      <a href="#entradas">Entradas</a>
+      <a href="#galeria">Galería</a>
+      <a href="#ubicacion">Ubicación</a>
+    </nav>
+  </header>
 
-    <section class="hero">
-        <h2>¡Viví la experiencia musical del año!</h2>
-        <p>3 días de música, arte y diversión en Córdoba.</p>
-        <a href="#" class="btn">Comprar Entradas</a>
-    </section>
+  <section class="hero">
+    <h1>Festival Sonido Sur 2025</h1>
+    <p>Vive la mejor experiencia de música electrónica y cultural del sur</p>
+    <a href="#entradas" class="btn">Compra tus entradas</a>
+  </section>
 
-    <main>
-        <section class="lineup">
-    <h2><i class="fas fa-users"></i> Line-up</h2>
+  <section id="lineup" class="lineup">
+    <h2>Lineup Oficial</h2>
     <div class="dias-lineup">
-        <div class="dia">
-            <h3>Viernes 21</h3>
-            <ul>
-                <li>🎤 Indie Dream</li>
-                <li>🎸 Los Acústicos</li>
-                <li>🎧 Neón Nocturno</li>
-                <li>🎷 Sol Álvarez</li>
-                <li>🎹 DJ Franja</li>
-            </ul>
-        </div>
-        <div class="dia">
-            <h3>Sábado 22</h3>
-            <ul>
-                <li>🥁 Electro Jungle</li>
-                <li>🎶 Funky Beat</li>
-                <li>🎻 Ana Violeta</li>
-                <li>🪕 Los del Valle</li>
-                <li>🎼 Marina Glow</li>
-            </ul>
-        </div>
-        <div class="dia">
-            <h3>Domingo 23</h3>
-            <ul>
-                <li>🎙️ Urban Soul</li>
-                <li>🕺 Beat City</li>
-                <li>🎸 Rolo & los Rolling</li>
-                <li>🎧 DJ Maquina</li>
-                <li>🎤 Clara Azul</li>
-            </ul>
-        </div>
+      <article class="dia">
+        <h3>Viernes 18/10</h3>
+        <ul>
+          <li>DJ Luna - Set nocturno</li>
+          <li>Electro Vibes</li>
+          <li>Beat Wave</li>
+          <li>Sound Tribe</li>
+        </ul>
+      </article>
+      <article class="dia">
+        <h3>Sábado 19/10</h3>
+        <ul>
+          <li>Neon Pulse</li>
+          <li>Deep Flow</li>
+          <li>Night Grooves</li>
+          <li>Solar Beats</li>
+        </ul>
+      </article>
+      <article class="dia">
+        <h3>Domingo 20/10</h3>
+        <ul>
+          <li>Echo Sphere</li>
+          <li>Rhythm Quest</li>
+          <li>Ambient Sky</li>
+          <li>Final Jam</li>
+        </ul>
+      </article>
     </div>
-</section>
+  </section>
 
+  <section id="entradas">
+    <h2>Tipos de Entradas</h2>
+    <div class="selector-dias">
+      <div class="botones-dias">
+        <button data-dia="viernes">Viernes</button>
+        <button data-dia="sabado">Sábado</button>
+        <button data-dia="domingo">Domingo</button>
+      </div>
+    </div>
 
-      <header>
-        <h1><i class="fas fa-ticket-alt"></i> Entradas Festival 2025</h1>
-    </header>
+    <div id="entradas-viernes" class="entradas-dia">
+      <article class="entrada-card">
+        <h4>Entrada General</h4>
+        <p class="precio">$2000 ARS</p>
+        <ul>
+          <li>Acceso a todas las áreas</li>
+          <li>Incluye zona de food trucks</li>
+          <li>1 bebida sin alcohol gratis</li>
+        </ul>
+      </article>
+      <article class="entrada-card">
+        <h4>VIP</h4>
+        <p class="precio">$4000 ARS</p>
+        <ul>
+          <li>Zona exclusiva con mejor vista</li>
+          <li>Barra libre de tragos seleccionados</li>
+          <li>Regalo oficial del festival</li>
+        </ul>
+      </article>
+    </div>
 
-    <main>
-        <section class="selector-dias">
-            <h2>Elegí tu día</h2>
-            <div class="botones-dias">
-                <button onclick="mostrarDia('viernes')">Viernes 21</button>
-                <button onclick="mostrarDia('sabado')">Sábado 22</button>
-                <button onclick="mostrarDia('domingo')">Domingo 23</button>
-            </div>
-        </section>
+    <div id="entradas-sabado" class="entradas-dia activo">
+      <article class="entrada-card">
+        <h4>Entrada General</h4>
+        <p class="precio">$2500 ARS</p>
+        <ul>
+          <li>Acceso general al evento</li>
+          <li>Zona de merchandising oficial</li>
+          <li>1 bebida sin alcohol gratis</li>
+        </ul>
+      </article>
+      <article class="entrada-card">
+        <h4>VIP</h4>
+        <p class="precio">$4800 ARS</p>
+        <ul>
+          <li>Acceso a zona VIP exclusiva</li>
+          <li>Meet & Greet con artistas</li>
+          <li>Barra libre y catering premium</li>
+        </ul>
+      </article>
+    </div>
 
-        <section id="viernes" class="entradas-dia activo">
-            <h3>Entradas - Viernes 21</h3>
-            <div class="tipos-entradas">
-                <div class="entrada-card">
-                    <h4>General</h4>
-                    <p class="precio">$4.000</p>
-                    <ul>
-                        <li>Zona general</li>
-                        <li>Acceso desde las 17:00</li>
-                    </ul>
-                    <a href="#" class="btn">Comprar</a>
-                </div>
-                <div class="entrada-card">
-                    <h4>VIP</h4>
-                    <p class="precio">$8.000</p>
-                    <ul>
-                        <li>Zona preferencial</li>
-                        <li>Bebida sin alcohol incluida</li>
-                    </ul>
-                    <a href="#" class="btn">Comprar</a>
-                </div>
-            </div>
-        </section>
+    <div id="entradas-domingo" class="entradas-dia">
+      <article class="entrada-card">
+        <h4>Entrada General</h4>
+        <p class="precio">$2200 ARS</p>
+        <ul>
+          <li>Acceso a todas las áreas</li>
+          <li>Zona de actividades al aire libre</li>
+          <li>1 bebida sin alcohol gratis</li>
+        </ul>
+      </article>
+      <article class="entrada-card">
+        <h4>VIP</h4>
+        <p class="precio">$4500 ARS</p>
+        <ul>
+          <li>Acceso a zona VIP exclusiva</li>
+          <li>Meet & Greet con artistas</li>
+          <li>Barra libre y merchandising exclusivo</li>
+        </ul>
+      </article>
+    </div>
+  </section>
 
-        <section id="sabado" class="entradas-dia">
-            <h3>Entradas - Sábado 22</h3>
-            <div class="tipos-entradas">
-                <div class="entrada-card">
-                    <h4>General</h4>
-                    <p class="precio">$5.000</p>
-                    <ul>
-                        <li>Acceso a todo el predio</li>
-                        <li>Zona general</li>
-                    </ul>
-                    <a href="#" class="btn">Comprar</a>
-                </div>
-                <div class="entrada-card">
-                    <h4>VIP</h4>
-                    <p class="precio">$9.500</p>
-                    <ul>
-                        <li>Zona VIP + Lounge</li>
-                        <li>Merchandising</li>
-                    </ul>
-                    <a href="#" class="btn">Comprar</a>
-                </div>
-            </div>
-        </section>
+  <section id="galeria" class="galeria">
+    <h2>Galería</h2>
+    <div class="imagenes">
+      <img src="./imagenes/festival1.jpg" alt="Festival 1" />
+      <img src="./imagenes/festival2.jpg" alt="Festival 2" />
+      <img src="./imagenes/festival3.jpg" alt="Festival 3" />
+      <img src="./imagenes/festival4.jpg" alt="Festival 4" />
+      <img src="./imagenes/festival5.jpg" alt="Festival 5" />
+    </div>
+  </section>
 
-        <section id="domingo" class="entradas-dia">
-            <h3>Entradas - Domingo 23</h3>
-            <div class="tipos-entradas">
-                <div class="entrada-card">
-                    <h4>General</h4>
-                    <p class="precio">$5.500</p>
-                    <ul>
-                        <li>Zona general</li>
-                        <li>Acceso a zona food trucks</li>
-                    </ul>
-                    <a href="#" class="btn">Comprar</a>
-                </div>
-                <div class="entrada-card">
-                    <h4>Full Experience</h4>
-                    <p class="precio">$12.000</p>
-                    <ul>
-                        <li>Meet & Greet</li>
-                        <li>Bebidas + regalos exclusivos</li>
-                    </ul>
-                    <a href="#" class="btn">Comprar</a>
-                </div>
-            </div>
-        </section>
-    </main>
-    <script>
-        function mostrarDia(diaId) {
-            document.querySelectorAll('.entradas-dia').forEach(section => {
-                section.classList.remove('activo');
-            });
-            document.getElementById(diaId).classList.add('activo');
+  <section id="ubicacion" class="ubicacion">
+    <h2>¿Dónde es el festival?</h2>
+    <p>Parque Central, Ciudad de Mendoza</p>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3355.910829251686!2d-68.83182858481236!3d-32.890379480905836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e099ee013b0b1%3A0x120feac2821403c7!2sParque%20Central%2C%20Mendoza%2C%20Argentina!5e0!3m2!1ses!2sar!4v1584640130613!5m2!1ses!2sar"
+      width="100%"
+      height="300"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+    ></iframe>
+  </section>
+
+  <section id="newsletter" class="newsletter">
+    <h2>Suscribite al Newsletter</h2>
+    <form id="form-newsletter">
+      <input type="email" id="email" placeholder="Tu email" required />
+      <button type="submit">Suscribirme</button>
+    </form>
+    <p id="mensaje-newsletter" style="margin-top: 10px; color: #ff5e62;"></p>
+  </section>
+
+  <footer>
+    <p>
+      &copy; 2025 Festival Sonido Sur |
+      <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a> |
+      <a href="#" target="_blank" rel="noopener noreferrer">Facebook</a>
+    </p>
+  </footer>
+
+  <script>
+    // Mostrar entradas de un día y activar botón
+    function mostrarDia(dia) {
+      const dias = document.querySelectorAll('.entradas-dia');
+      dias.forEach((d) => d.classList.remove('activo'));
+      const seleccionado = document.getElementById('entradas-' + dia);
+      if (seleccionado) seleccionado.classList.add('activo');
+
+      // Activar botón correspondiente
+      const botones = document.querySelectorAll('.botones-dias button');
+      botones.forEach((b) => {
+        if (b.dataset.dia === dia) {
+          b.classList.add('active');
+        } else {
+          b.classList.remove('active');
         }
-    </script>
+      });
+    }
 
-        <section class="ubicacion">
-            <h2><i class="fas fa-map-marker-alt"></i> Ubicación</h2>
-            <p>Parque Central, Ciudad de Córdoba</p>
-            <iframe src="https://www.google.com/maps/embed?..." width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </section>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Mostrar sábado al inicio
+      mostrarDia('sabado');
 
-        <section class="galeria">
-            <h2><i class="fas fa-camera"></i> Galería</h2>
-            <div class="imagenes">
-                <img src="festival1.jpg" alt="Festival 1">
-                <img src="festival2.jpg" alt="Festival 2">
-                <img src="festival3.jpg" alt="Festival 3">
-            </div>
-        </section>
+      // Agregar eventos click a botones de días
+      const botonesDias = document.querySelectorAll('.botones-dias button');
+      botonesDias.forEach((boton) => {
+        boton.addEventListener('click', () => {
+          mostrarDia(boton.dataset.dia);
+        });
+      });
 
-        <section class="newsletter">
-            <h2><i class="fas fa-envelope"></i> Suscribite</h2>
-            <p>Recibí novedades y descuentos exclusivos</p>
-            <form>
-                <input type="email" placeholder="Tu email" required>
-                <button type="submit">Suscribirme</button>
-            </form>
-        </section>
-    </main>
+      // Capturar formulario newsletter
+      const form = document.getElementById('form-newsletter');
+      const mensaje = document.getElementById('mensaje-newsletter');
 
-    <footer>
-        <p>&copy; 2025 Festival Indie | Seguinos en 
-            <a href="#"><i class="fab fa-instagram"></i></a> 
-            <a href="#"><i class="fab fa-facebook"></i></a> 
-            <a href="#"><i class="fab fa-twitter"></i></a>
-        </p>
-    </footer>
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const emailInput = document.getElementById('email');
+        if (emailInput.checkValidity()) {
+          mensaje.textContent = `Gracias por suscribirte, ${emailInput.value}! 🎉`;
+          form.reset();
+        } else {
+          mensaje.textContent = 'Por favor, ingresa un email válido.';
+        }
+        setTimeout(() => {
+          mensaje.textContent = '';
+        }, 5000);
+      });
+    });
+  </script>
 </body>
 </html>
 
